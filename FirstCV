@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+    body {
+        background-color:#4ABDAC;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    #cvimage {
+        width: 15%;
+        height: auto;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+        border-style: solid;
+        border-width: 3px;
+        border-color:whitesmoke;
+    }
+    
+    h1 {
+        color: #FC4A1A;
+display: flex;
+justify-content: center;
+animation-name: change-color;
+animation-duration: 2s;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: xx-large;
+font-display: block; }
+    
+    </style>
+</head>
+<header>
+<img id="cvimage" src="https://i.pinimg.com/564x/a2/7f/54/a27f54521296dcf2475512b0286edbd2.jpg"
+ alt="CV profile image">
+<h1 class="animate_animated animate__bounce">Diego Rodriguez</h1>
+</header>
+<body>
+<div>
+    <h2>
+    Objetivo
+    </h2>
+    <p>
+Adquirir expertise en el area de RRHH, así como aplicar tecnologías para la optimización de procesos.
+    </p>
+<h2>
+    Aptitudes
+</h2>
+<p>
+    <ul>
+        <li>Gusto por el aprendizaje</li>
+        <li>Orientado a objetivos</li>
+        <li>Proactivo</li>
+    </ul>
+</p>
+</div>
+<h3>Experiencia</h3>
+<p>Asesor Comercial - Finvivir</p>
+<p>Sept, 2017- Oct, 2019</p>
+
+<p>Reclutador - Keystone</p>
+<p>Feb, 2020 - Abr, 2020</p>
+
+<p>Checkman- YKM</p>
+<p>Sept, 2020 - Actualmente</p>
+
+<div>
+<h4>Educación</h4>
+<p>Licenciatura en Psicología - Universidad Veracruzana</p>
+
+<h4>Conocimientos</h4>
+<p>HTML, CSS y Javascript</p>
+<p>Inglés</p>
+<p>Microsoft Office</p>
+</div>
+
+</body>
+</html>
