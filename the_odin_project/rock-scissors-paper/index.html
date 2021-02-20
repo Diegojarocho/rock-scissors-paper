@@ -3,7 +3,37 @@
 
 <body>
     <script>
+       function playRound(playerSelection, computerSelection){
+        if (playerSelection === computerSelection) {
+            return 'Its a tie!';
+        } else if (playerSelection === 'rock' && computerSelection === 'scissor') {
+            return '¡You have won! Rock just destroyed scissor';
+        } else if (playerSelection === 'rock' && computerSelection === 'paper') {
+            return '¡You have lost! Your rock had no chance against paper';
+        } else if (playerSelection === 'scissor' && computerSelection === 'rock') {
+            return '¡You have lost! That rock just destroyed your scissor';
+        } else if (playerSelection === 'scissor' && computerSelection === 'paper') {
+            return '¡You have won! That paper had no chance against scissor';
+        } else if (playerSelection === 'paper' && computerSelection === 'rock') {
+            return '¡You have won! Paper just beat that rock';
+        } else if (playerSelection === 'paper' && computerSelection === 'scissor') {
+            return '¡You have lost! Paper had no chance against scissor';
+        } else {
+            return 'You messed up, try again.';
+        }
+       }
+       let playerSelection = playerPlays();
+       let computerSelection = computerPlay();
+       
+       function playerPlays(){
+           return prompt('Write down rock, scissor or paper').toLowerCase();
+       }
+       function computerPlay(){
+            let playsArray = ['rock', 'scissor', 'paper'];
+            return (playsArray[Math.floor(Math.random() *playsArray.length)]);
+        }
         
+        playRound(playerSelection, computerSelection);
     </script>
 </body>
 </html>
